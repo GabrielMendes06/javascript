@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de JS</title>
+</head>
+<body>
+    <h1>Sistema de Cadastro</h1>
+    <p>Qual país você nasceu</p>
+    <input type="text" name="nas" id="nas"> 
+    <input type="button" value="Verificar" onclick="ver()">
+    <div id="res">
+
+    </div>
+    <script>
+        var res = window.document.querySelector("div#res")
+        var ident = window.document.querySelector("input#nas")
+        function ver() {
+            res.innerHTML = `Você nasceu em ${ident.value}`
+            if(ident.value == "Brasil" || ident.value == "brasil") {
+                res.innerHTML += '<p> Você é Brasileiro </p>' 
+            } else {
+                res.innerHTML += '<p> Você é Estrangeiro </p>'
+            }
+        }
+    </script>
+</body>
+</html>
