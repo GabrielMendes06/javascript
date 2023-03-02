@@ -30,3 +30,9 @@ footer {
     font-size: 0.6em;
     margin: 10px;
 }
+
+#tabela {
+    margin: 30px 10px 0px 0px;
+    width: 150px;
+    height: 100px;
+}
