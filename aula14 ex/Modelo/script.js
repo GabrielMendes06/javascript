@@ -9,7 +9,7 @@ function contar() {
     fim.value.length == 0 ||
     passo.value.length == 0
   ) {
-    res.innetHTML = "Impossível contar!";
+    res.innerHTML = "Impossível contar!";
     window.alert("[ERRO] faltam dados!");
   } else {
     res.innerHTML = "Contando: <br> ";
